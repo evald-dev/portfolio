@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "daisyui";
+
+@layer base {
+  body {
+    @apply bg-[url(./assets/background.svg)]
+  }
+}
 
 
 body {
