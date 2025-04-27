@@ -6,7 +6,7 @@ function App() {
   return (
     <div class="z-10">
      
-      <p class="z-10 text-white mx-4 md:mx-16 my-4 text-xl flex items-center gap-2">
+      <p class="z-10 text-white mx-4 md:mx-[2vw] my-4 text-xl flex items-center gap-2">
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
        stroke-width="1.5" stroke="currentColor" class="size-6">
     <path stroke-linecap="round" stroke-linejoin="round"
