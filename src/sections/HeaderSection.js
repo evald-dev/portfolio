@@ -5,21 +5,47 @@ import "../App.css";
 
 export default function HeaderSection() {
   return (
-    <div class="z-20 grid grid-flow-row md:flex md:col-auto bg-gray-600 mx-4 md:mx-16 my-5 min-h-[85vh]  rounded-2xl bg-gray-0 backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 border-opacity-50">
-      <img
-        src={evald}
-        class="border-orange-300 border my-auto mx-auto md:mx-10 rounded-2xl max-h-[50vh] md:max-h-[80vh]"
-      ></img>
-      <div class="mx-auto md:mx-24 md:my-auto text-2xl md:text-2xl">
-        <p class="text-white ">Hi im Evald Denhof</p>
-        <p class="text-white text-4xl md:text-6xl font-bold ">
-          Im{" "}
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-red-500">
-            Fullstack
-          </span>
-        </p>
-        <p class="text-white text-4xl md:text-6xl font-bold ">Junior Developer</p>
-        <div class="col-auto my-10"></div>
+    <div class="bg-gray-0 z-20 mx-4 my-5 flex min-h-[80vh] flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:items-start md:my-0">
+      <div class="md:mx-[4vw] md:flex md:flex-row">
+        <img
+          src={evald}
+          class=" mx-auto my-[12vw] max-h-[100vw] rounded-2xl border border-orange-300 md:my-[2vw] md:max-h-[40vw]"
+        ></img>
+        <div class="mx-auto flex flex-col items-center leading-[8vw] md:mx-[10vw] md:my-auto md:flex-col md:items-start md:leading-[4vw]">
+          <p class="text-[6vw] text-gray-200 md:text-[2vw]">
+            Hi im Evald Denhof
+          </p>
+          <p class="text-[8vw] font-bold text-white md:text-[4vw]">
+            Im{" "}
+            <span class="bg-gradient-to-r from-orange-300 to-red-500 bg-clip-text text-transparent">
+              Fullstack
+            </span>
+          </p>
+          <p class="text-[8vw] font-bold text-white md:text-[4vw]">
+            Junior Developer
+          </p>
+          <div class="my-4 flex flex-row space-x-4 ">
+            
+            <button class="mt-[4vw] hover:scale-105 hover: duration-100 inline-flex w-auto min-w-[25vw] opacity-95 hover:opacity-100 items-center rounded-md border-2 border-white bg-orange-300 px-[3vw] py-[1vw] text-[6vw] font-bold text-white 
+            md:text-[2.5vw] md:px-[1vw] md:min-w-[1vw] md:py-0 md:mt-[1vw]">
+              Lebenslauf
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="ml-[1vw] size-[6vw] md:size-[2vw]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
