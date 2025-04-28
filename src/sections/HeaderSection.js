@@ -5,7 +5,7 @@ import "../App.css";
 
 export default function HeaderSection() {
   return (
-    <div class="bg-gray-0 z-20 mx-[4vw] my-5 flex min-h-[80vh] flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:items-start">
+    <div class="bg-gray-0 z-20 mx-[4vw] my-5 flex min-h-[80vh] flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:items-start md:max-h-[90vh] md:min-h-0">
       <div class="md:mx-[4vw] md:flex md:flex-row">
         <img
           src={evald}
