@@ -5,11 +5,11 @@ import "../App.css";
 
 export default function HeaderSection() {
   return (
-    <div class="bg-gray-0 z-20 mx-4 my-5 flex min-h-[80vh] flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:items-start md:my-0">
+    <div class="bg-gray-0 z-20 mx-[4vw] my-5 flex min-h-[80vh] flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:items-start md:my-0">
       <div class="md:mx-[4vw] md:flex md:flex-row">
         <img
           src={evald}
-          class=" mx-auto my-[12vw] max-h-[100vw] rounded-2xl border border-orange-300 md:my-[2vw] md:max-h-[40vw]"
+          class=" mx-auto my-[10vw] max-h-[100vw] rounded-2xl border border-orange-300 md:my-[2vw] md:max-h-[38vw]"
         ></img>
         <div class="mx-auto flex flex-col items-center leading-[8vw] md:mx-[10vw] md:my-auto md:flex-col md:items-start md:leading-[4vw]">
           <p class="text-[6vw] text-gray-200 md:text-[2vw]">

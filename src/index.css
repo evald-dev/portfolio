@@ -5,9 +5,10 @@
 
 @layer base {
   body {
-    @apply bg-[url(./assets/background.svg)]
+    @apply bg-black bg-[url(./assets/background.svg)]
   }
 }
+
 
 
 body {
