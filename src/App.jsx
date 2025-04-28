@@ -15,7 +15,7 @@ function App() {
         </div>
         <AboutMeSection/>
       </div>
-      <div class="md:h-[3vw]"></div>
+      <div class="h-[2vw] md:h-[3vw]"></div>
     </div>
   );
 }
