@@ -26,8 +26,8 @@ export default function HeaderSection() {
           </p>
           <div class="my-4 flex flex-row space-x-4 ">
             
-            <button class="mt-[4vw] hover:scale-105 hover: duration-100 inline-flex w-auto min-w-[25vw] opacity-95 hover:opacity-100 items-center rounded-md border-2 border-white bg-orange-300 px-[3vw] py-[1vw] text-[6vw] font-bold text-white 
-            md:text-[2.5vw] md:px-[1vw] md:min-w-[1vw] md:py-0 md:mt-[1vw]">
+            <a target="_blank" href="https://drive.google.com/file/d/1DEJ9boEeccXmFte-uqytmTpWKSVXOhOP/view?usp=sharing"><button  class="mt-[4vw] hover:scale-105 hover: duration-100 inline-flex w-auto min-w-[25vw] opacity-95 hover:opacity-100 items-center rounded-md border-2 border-white bg-orange-300 px-[3vw] py-[1vw] text-[6vw] font-bold text-white 
+            md:text-[2.5vw] md:px-[1vw] md:min-w-[1vw] md:py-0 md:mt-[1vw] ">
               Lebenslauf
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +44,7 @@ export default function HeaderSection() {
                 />
               </svg>
             </button>
+            </a>
           </div>
         </div>
       </div>
