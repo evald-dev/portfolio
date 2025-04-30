@@ -10,10 +10,10 @@ import SkillTag from "../components/SkillTag";
 
 export default function AboutMeSection() {
   return (
-    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] mb-[3vh] flex h-[95vh] snap-center flex-col rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:h-[80vh] md:max-h-20 md:min-h-[90vh] md:items-start">
-      <div class="mx-[3vw] my-[2vh] md:rounded-xl md:border md:border-orange-300 md:bg-[#242424]">
-        <h1 class="text-[6vw] font-bold text-orange-300"> Über mich</h1>
-        <p class="text-white">
+    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] mb-[3vh] flex snap-center flex-col rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:h-[80vh] md:max-h-20 md:min-h-[90vh] md:items-start">
+       <div class="mx-[3vw] my-[2vh] rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:h-[80vh]">
+        <h1 class="m-[2vw] text-[6vw] font-bold text-orange-300"> Über mich</h1>
+        <p class="text-white m-[2vw]">
           Hey, ich bin Evald Fachinformatiker für Anwendungsentwicklung mit
           einer Leidenschaft für kreative Projekte, KI und moderne
           Web-Technologien. Ich denke gerne unkonventionell, lerne ständig Neues
@@ -24,7 +24,7 @@ export default function AboutMeSection() {
       </div>
       {/* Main Skills */}
       <div class="mx-[3vw] my-[2vh] grid grid-cols-2 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:h-[80vh]">
-        <h1 class="col-span-2 m-[2vw] bg-gradient-to-r from-orange-300 to-red-500 bg-clip-text text-[6vw] font-bold text-transparent">
+        <h1 class="col-span-2  m-[2vw] bg-gradient-to-l from-pink-500 via-red-500 to-orange-300 bg-clip-text text-[6vw] font-bold text-transparent">
           Main Skills
         </h1>
         <MainSkillBox image={spring} text={"Spring"} />
@@ -34,7 +34,7 @@ export default function AboutMeSection() {
         <MainSkillBox image={flutter} text={"Flutter"} />
         <MainSkillBox image={postgresql} text={"Postgre"} />
       </div>
-      <div class="mx-[3vw] my-[2vh] mb-[10vw] grid grid-cols-3 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:h-[80vh]">
+      <div class="mx-[3vw] my-[2vh] grid grid-cols-3 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:h-[80vh]">
         <h1 class="col-span-3 m-[2vw] text-[6vw] font-bold text-orange-300">
           Schon verwendet
         </h1>
@@ -46,6 +46,8 @@ export default function AboutMeSection() {
         <SkillTag text={"Jira"} />
         <SkillTag text={"Bitbucket"} />
         <SkillTag text={"Doocker"} />
+        <SkillTag text={"JPA"} />
+        <SkillTag text={"Figma"} />
       </div>
     </div>
   );
