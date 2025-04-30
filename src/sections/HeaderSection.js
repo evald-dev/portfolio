@@ -5,7 +5,7 @@ import "../App.css";
 
 export default function HeaderSection() {
   return (
-    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] mb-[3vh] flex min-h-[90vh] flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:max-h-[90vh] md:min-h-0 md:items-start 2xl:my-[5vh] 2xl:max-h-[95vh]">
+    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] pb-[3vh] mb-[3vh] flex  flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:max-h-[90vh] md:min-h-0 md:items-start 2xl:my-[5vh] 2xl:max-h-[95vh]">
       <div class="md:mx-[4vw] md:flex md:flex-row">
         <img
           src={evald}
@@ -25,7 +25,6 @@ export default function HeaderSection() {
           <p class="text-[7vw] font-bold text-white md:text-[4vw]">
             Junior Entwickler
           </p>
-
 
           <div class="my-4 flex flex-row space-x-4">
             <a
