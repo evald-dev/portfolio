@@ -5,31 +5,28 @@ import "../App.css";
 
 export default function HeaderSection() {
   return (
-    <div class=" bg-gray-0 z-20 mx-[4vw] my-[2vh] mb-[3vh] flex min-h-[90vh] flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:items-start md:max-h-[90vh] 2xl:max-h-[95vh] 2xl:my-[5vh] md:min-h-0">
+    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] mb-[3vh] flex min-h-[90vh] flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:max-h-[90vh] md:min-h-0 md:items-start 2xl:my-[5vh] 2xl:max-h-[95vh]">
       <div class="md:mx-[4vw] md:flex md:flex-row">
         <img
           src={evald}
-          class="mx-auto my-[10vw] max-h-[100vw] rounded-[15px] border border-orange-300 md:my-[2vw] md:max-h-[38vw] md:mx-0"
+          class="mx-auto my-[10vw] max-h-[100vw] rounded-[15px] border border-orange-300 md:mx-0 md:my-[2vw] md:max-h-[38vw]"
         ></img>
         {/* Ab hier der Text inhalt mit Button */}
         <div class="mx-auto flex flex-col items-center leading-[8vw] md:mx-[10vw] md:my-auto md:flex-col md:items-start md:leading-[4vw]">
-          <p class="text-[6vw] text-gray-200 md:text-[1.5vw]">
+          <p class="text-[5vw] text-gray-200 md:text-[1.5vw]">
             Hallo ich bin Evald Denhof
           </p>
-          <p class="text-[8vw] font-bold text-white md:text-[4vw]">
+          <p class="text-[7vw] font-bold text-white md:text-[4vw]">
             Ich bin ein{" "}
             <span class="bg-gradient-to-r from-orange-300 to-red-500 bg-clip-text text-transparent">
               Fullstack
             </span>
           </p>
-          <p class="text-[8vw] font-bold text-white md:text-[4vw]">
+          <p class="text-[7vw] font-bold text-white md:text-[4vw]">
             Junior Entwickler
           </p>
-         
-          <p class="text-center text-[2vh] text-gray-200 py-[1vh] md:text-[1.5vw] leading-[2vh] md:leading-[5vh]">
-          Ich entwickle moderne, nutzerfreundliche Webanwendungen mit Leidenschaft für Technik und Design.
-          </p>
-    
+
+
           <div class="my-4 flex flex-row space-x-4">
             <a
               target="_blank"
@@ -39,7 +36,7 @@ export default function HeaderSection() {
                 Lebenslauf
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none" 
+                  fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="2"
                   stroke="currentColor"
