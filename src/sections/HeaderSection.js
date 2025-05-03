@@ -16,12 +16,12 @@ export default function HeaderSection() {
           <p class="text-[5vw] text-gray-200 md:text-[1.5vw]">
             Hallo ich bin Evald Denhof
           </p>
-          <p class="text-[7vw] font-bold text-white md:text-[4vw]">
+          <h1 class=" font-bold text-white">
             Ich bin ein{" "}
             <span class="bg-gradient-to-r from-orange-300 to-red-500 bg-clip-text text-transparent">
               Fullstack
             </span>
-          </p>
+          </h1>
           <p class="text-[7vw] font-bold text-white md:text-[4vw]">
             Junior Entwickler
           </p>

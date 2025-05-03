@@ -7,19 +7,21 @@ import react from "../assets/react.svg";
 import postgresql from "../assets/postgresql.svg";
 import tailwind from "../assets/tailwind.svg";
 import SkillTag from "../components/SkillTag";
+import "../index.css";
 
 export default function AboutMeSection() {
   return (
     <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] mb-[3vh] flex snap-center flex-col rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:min-h-[90vh] md:items-start">
       {/* Column fuer md */}
      <div class="md:grid md:grid-cols-5">
+      {/* Uebermich + Schonverwendet window */}
       <div class="md:col-span-4 md:ml-[2vw] md:mr-[-1vw]">
       <div class="mx-[3vw] my-[2vh] rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:m-[4vw] md:my-[2vw] ">
-        <h1 class="m-[2vw] text-[6vw] font-bold text-orange-300 md:m-[1vw] md:text-[3vw]">
+        <h2 class="m-[2vw]  font-bold text-orange-300 md:m-[1vw] md:my-0">
           {" "}
           Über mich
-        </h1>
-        <p class="m-[2vw] text-white md:m-[1vw] md:text-[2vw]">
+        </h2>
+        <p class="m-[2vw] text-white md:m-[1vw]">
           Hey, ich bin Evald Fachinformatiker für Anwendungsentwicklung mit
           einer Leidenschaft für kreative Projekte, KI und moderne
           Web-Technologien. Ich denke gerne unkonventionell, lerne ständig Neues
@@ -34,9 +36,9 @@ export default function AboutMeSection() {
       </div>
       {/* Main Skills */}
       <div class="mx-[3vw] my-[2vh] grid grid-cols-2 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:w-[20vw] md:m-[2vw] md:flex md:flex-col md:my-[4vh] md:order-first md:mb-[2vw]">
-        <h1 class="col-span-2 m-[2vw] bg-gradient-to-l from-red-500 to-orange-300 bg-clip-text text-[6vw] font-bold text-transparent md:mx-[2vw] md:my-[0] md:text-[3vw]">
+        <h2 class="col-span-2 m-[2vw] bg-gradient-to-l from-red-500 to-orange-300 bg-clip-text  font-bold text-transparent md:mx-[2vw] md:my-[0]">
           Main Skills
-        </h1>
+        </h2>
         <MainSkillBox image={spring} text={"Spring"} />
         <MainSkillBox image={java} text={"Java"} />
         <MainSkillBox image={react} text={"React"} />
@@ -55,10 +57,10 @@ export default function AboutMeSection() {
 function SkillTagsWindow(){
   return(
     <div>
-<div class="mx-[3vw] my-[2vh] grid grid-cols-3 md:grid-cols-6 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:mb-[2vw] md:m-[4vw] ">
-        <h1 class="col-span-3 md:col-span-6 m-[2vw] text-[6vw] font-bold text-orange-300 md:m-[2vw] md:mb-0 md:text-[3vw]">
+<div class="mx-[3vw] my-[2vh] grid grid-cols-3 md:grid-cols-6 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:mb-[2vw] md:my-[5vw] md:m-[4vw] ">
+        <h2 class="col-span-3 md:col-span-6 m-[2vw] font-bold text-orange-300 md:m-[1vw] md:mt-[0vw] md:mb-0">
           Schon verwendet
-        </h1>
+        </h2>
 
         <SkillTag text={"Python"} />
         <SkillTag text={"Django"} />

@@ -5,22 +5,56 @@
 
 @layer base {
   body {
-    @apply bg-black bg-[url(./assets/background.svg)]
+    @apply bg-black bg-[url(./assets/background.svg)];
   }
 }
 
+@layer base {
+  h1{
+    font-size: 7vw;
+  }
+  
+  h2 {
+    font-size: 6vw;
+  }
+  h3{
+    font-size: 4vw;
+  }
+}
+  @screen md { 
+    h1{
+      font-size:4vw;
+    }
+    h2 {
+      font-size: 2.5vw;
+    }
+    h3{
+      font-size:1.5vw;
+    }
+  }
+ 
 
+@layer base {
+  p {
+    font-size: 4vw;
+  }
+  @screen md {
+    p {
+      font-size: 1.25vw;
+    }
+  }
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
