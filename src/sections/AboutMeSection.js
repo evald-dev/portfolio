@@ -10,10 +10,16 @@ import SkillTag from "../components/SkillTag";
 
 export default function AboutMeSection() {
   return (
-    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] mb-[3vh] flex snap-center flex-col rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:h-[80vh] md:max-h-20 md:min-h-[90vh] md:items-start">
-       <div class="mx-[3vw] my-[2vh] rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:h-[80vh]">
-        <h1 class="m-[2vw] text-[6vw] font-bold text-orange-300"> Über mich</h1>
-        <p class="text-white m-[2vw]">
+    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] mb-[3vh] flex snap-center flex-col rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:min-h-[90vh] md:items-start">
+      {/* Column fuer md */}
+     <div class="md:grid md:grid-cols-5">
+      <div class="md:col-span-4 md:ml-[2vw] md:mr-[-1vw]">
+      <div class="mx-[3vw] my-[2vh] rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:m-[4vw] md:my-[2vw] ">
+        <h1 class="m-[2vw] text-[6vw] font-bold text-orange-300 md:m-[1vw] md:text-[3vw]">
+          {" "}
+          Über mich
+        </h1>
+        <p class="m-[2vw] text-white md:m-[1vw] md:text-[2vw]">
           Hey, ich bin Evald Fachinformatiker für Anwendungsentwicklung mit
           einer Leidenschaft für kreative Projekte, KI und moderne
           Web-Technologien. Ich denke gerne unkonventionell, lerne ständig Neues
@@ -22,9 +28,13 @@ export default function AboutMeSection() {
           die nicht nur funktionieren, sondern Eindruck hinterlassen.
         </p>
       </div>
+      <span class="hidden md:block">
+      <SkillTagsWindow></SkillTagsWindow>
+      </span>
+      </div>
       {/* Main Skills */}
-      <div class="mx-[3vw] my-[2vh] grid grid-cols-2 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:h-[80vh]">
-        <h1 class="col-span-2  m-[2vw] bg-gradient-to-l from-pink-500 via-red-500 to-orange-300 bg-clip-text text-[6vw] font-bold text-transparent">
+      <div class="mx-[3vw] my-[2vh] grid grid-cols-2 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:w-[20vw] md:m-[2vw] md:flex md:flex-col md:my-[4vh] md:order-first md:mb-[2vw]">
+        <h1 class="col-span-2 m-[2vw] bg-gradient-to-l from-red-500 to-orange-300 bg-clip-text text-[6vw] font-bold text-transparent md:mx-[2vw] md:my-[0] md:text-[3vw]">
           Main Skills
         </h1>
         <MainSkillBox image={spring} text={"Spring"} />
@@ -34,8 +44,19 @@ export default function AboutMeSection() {
         <MainSkillBox image={flutter} text={"Flutter"} />
         <MainSkillBox image={postgresql} text={"Postgre"} />
       </div>
-      <div class="mx-[3vw] my-[2vh] grid grid-cols-3 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:h-[80vh]">
-        <h1 class="col-span-3 m-[2vw] text-[6vw] font-bold text-orange-300">
+      </div>
+      <span class="md:hidden">
+      <SkillTagsWindow></SkillTagsWindow>
+      </span>
+    </div>
+  );
+}
+
+function SkillTagsWindow(){
+  return(
+    <div>
+<div class="mx-[3vw] my-[2vh] grid grid-cols-3 md:grid-cols-6 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:mb-[2vw] md:m-[4vw] ">
+        <h1 class="col-span-3 md:col-span-6 m-[2vw] text-[6vw] font-bold text-orange-300 md:m-[2vw] md:mb-0 md:text-[3vw]">
           Schon verwendet
         </h1>
 
@@ -50,5 +71,5 @@ export default function AboutMeSection() {
         <SkillTag text={"Figma"} />
       </div>
     </div>
-  );
+  )
 }

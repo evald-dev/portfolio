@@ -5,11 +5,11 @@ import "../App.css";
 
 export default function HeaderSection() {
   return (
-    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] pb-[3vh] mb-[3vh] flex  flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:max-h-[90vh] md:min-h-0 md:items-start 2xl:my-[5vh] 2xl:max-h-[95vh]">
+    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] pb-[3vh] mb-[3vh] md:mb-0 flex  flex-col items-center rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:p-0 md:my-0  md:max-h-[90vh] md:min-h-0 md:items-start">
       <div class="md:mx-[4vw] md:flex md:flex-row">
         <img
           src={evald}
-          class="mx-auto my-[10vw] max-h-[100vw] rounded-[15px] border border-orange-300 md:mx-0 md:my-[2vw] md:max-h-[38vw]"
+          class="mx-auto my-[10vw] max-h-[100vw] rounded-[15px] border border-orange-300 md:mx-[-2vw] md:my-[2vw] md:max-h-[38vw]"
         ></img>
         {/* Ab hier der Text inhalt mit Button */}
         <div class="mx-auto flex flex-col items-center leading-[8vw] md:mx-[10vw] md:my-auto md:flex-col md:items-start md:leading-[4vw]">
