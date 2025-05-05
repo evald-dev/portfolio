@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import "./index.css";
 import AboutMeSection from "./sections/AboutMeSection";
 import HeaderSection from "./sections/HeaderSection";
+import ProjectsSection from "./sections/ProjectsSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <HeaderSection />
         </div>
         <AboutMeSection/>
+        <ProjectsSection/>
       </div>
       <div class="h-[3vw] md:h-[3vw]"></div>
     </div>

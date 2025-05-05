@@ -11,7 +11,7 @@ import "../index.css";
 
 export default function AboutMeSection() {
   return (
-    <div class="bg-gray-0 z-20 mx-[4vw] my-[2vh] mb-[3vh] flex snap-center flex-col rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:min-h-[90vh] md:items-start">
+    <div class="big-container">
       {/* Column fuer md */}
      <div class="md:grid md:grid-cols-5">
       {/* Uebermich + Schonverwendet window */}
@@ -29,9 +29,25 @@ export default function AboutMeSection() {
           Was mich antreibt? Neugier, Vision und der Drang, Dinge zu erschaffen,
           die nicht nur funktionieren, sondern Eindruck hinterlassen.
         </p>
+        {/* ist so besser? */}
+        <div class="grid grid-cols-3 md:grid-cols-6 ">
+        <h2 class="col-span-3 md:col-span-6 m-[2vw] font-bold text-orange-300 md:m-[1vw] md:mt-[0vw] md:mb-0">
+          Schon verwendet
+        </h2>
+
+        <SkillTag text={"Python"} />
+        <SkillTag text={"Django"} />
+        <SkillTag text={"Firebase"} />
+        <SkillTag text={"Linux"} />
+        <SkillTag text={"Jira"} />
+        <SkillTag text={"Bitbucket"} />
+        <SkillTag text={"Doocker"} />
+        <SkillTag text={"JPA"} />
+        <SkillTag text={"Figma"} />
+      </div>
       </div>
       <span class="hidden md:block">
-      <SkillTagsWindow></SkillTagsWindow>
+   
       </span>
       </div>
       {/* Main Skills */}

@@ -22,9 +22,9 @@ export default function HeaderSection() {
               Fullstack
             </span>
           </h1>
-          <p class="text-[7vw] font-bold text-white md:text-[4vw]">
+          <h1 class=" font-bold text-white">
             Junior Entwickler
-          </p>
+          </h1>
 
           <div class="my-4 flex flex-row space-x-4">
             <a
@@ -32,7 +32,7 @@ export default function HeaderSection() {
               href="https://drive.google.com/file/d/1DEJ9boEeccXmFte-uqytmTpWKSVXOhOP/view?usp=sharing"
             >
               <button class="hover: mt-[4vw] inline-flex w-auto min-w-[25vw] items-center rounded-[15px] border-[1px] border-white bg-[#FFA95E] px-[3vw] py-[1vw] text-[6vw] font-bold text-white opacity-95 duration-100 hover:scale-105 hover:opacity-100 md:mt-[1vw] md:min-w-[1vw] md:px-[1vw] md:py-[0vw] md:text-[2.5vw]">
-                Lebenslauf
+                <h2>Lebenslauf</h2>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

@@ -9,6 +9,12 @@
   }
 }
 
+@layer components {
+  .big-container {
+    @apply z-20 mx-[4vw] my-[2vh] mb-[3vh] flex snap-center flex-col rounded-2xl border border-gray-100 border-opacity-50 bg-gray-600 bg-opacity-10 backdrop-blur-md backdrop-filter md:mx-[2vw] md:my-0 md:min-h-[90vh] md:items-start;
+  }
+}
+
 @layer base {
   h1{
     font-size: 7vw;
@@ -20,6 +26,7 @@
   h3{
     font-size: 4vw;
   }
+
 }
   @screen md { 
     h1{
@@ -31,6 +38,20 @@
     h3{
       font-size:1.5vw;
     }
+  }
+
+    @screen 3xl { 
+      h1{
+        font-size:3vw;
+      }
+      h2 {
+        font-size: 2vw;
+      }
+      h3{
+        font-size:1.25vw;
+      }
+
+
   }
  
 
