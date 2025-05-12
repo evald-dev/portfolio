@@ -13,68 +13,67 @@ export default function AboutMeSection() {
   return (
     <div class="big-container">
       {/* Column fuer md */}
-     <div class="md:grid md:grid-cols-5">
-      {/* Uebermich + Schonverwendet window */}
-      <div class="md:col-span-4 md:ml-[2vw] md:mr-[-1vw]">
-      <div class="mx-[3vw] my-[2vh] rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:m-[4vw] md:my-[2vw] ">
-        <h2 class="m-[2vw]  font-bold text-orange-300 md:m-[1vw] md:my-0">
-          {" "}
-          Über mich
-        </h2>
-        <p class="m-[2vw] text-white md:m-[1vw]">
-          Hey, ich bin Evald Fachinformatiker für Anwendungsentwicklung mit
-          einer Leidenschaft für kreative Projekte, KI und moderne
-          Web-Technologien. Ich denke gerne unkonventionell, lerne ständig Neues
-          und liebe es, Ideen zum Leben zu erwecken ob im Code, in der Musik.
-          Was mich antreibt? Neugier, Vision und der Drang, Dinge zu erschaffen,
-          die nicht nur funktionieren, sondern Eindruck hinterlassen.
-        </p>
-        {/* ist so besser? */}
-        <div class="grid grid-cols-3 md:grid-cols-6 ">
-        <h2 class="col-span-3 md:col-span-6 m-[2vw] font-bold text-orange-300 md:m-[1vw] md:mt-[0vw] md:mb-0">
-          Schon verwendet
-        </h2>
+      <div class="md:grid md:grid-cols-5">
+        {/* Uebermich + Schonverwendet window */}
+        <div class="md:col-span-4 md:ml-[2vw] md:mr-[-1vw]">
+          <div class="mx-[3vw] my-[2vh] rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:mx-[4vw] md:my-[2vw]">
+            <h2 class="m-[2vw] font-bold text-orange-300 md:m-[1vw] md:my-0">
+              {" "}
+              Über mich
+            </h2>
+            <p class="m-[2vw] text-white md:m-[1vw]">
+              Hey, ich bin Evald! Als frischgebackener Fachinformatiker
+              Anwendungsentwicklung (IHK 2025) lebe ich meine Kreativität im
+              Code aus. Mich begeistern moderne Web-Technologien (Java/Spring,
+              React) und ich finde es spannend, immer wieder neue Lösungswege zu
+              entdecken. Meine Motivation? Die Neugier auf neue Technologien und
+              die Freude daran, Ideen in funktionierende und eindrucksvolle
+              Anwendungen zu verwandeln.
+            </p>
+            {/* ist so besser? */}
+            <div class="grid grid-cols-3 md:grid-cols-6">
+              <h2 class="col-span-3 m-[2vw] font-bold text-orange-300 md:col-span-6 md:m-[1vw] md:mb-0 md:mt-[0vw]">
+                Schon verwendet
+              </h2>
 
-        <SkillTag text={"Python"} />
-        <SkillTag text={"Django"} />
-        <SkillTag text={"Firebase"} />
-        <SkillTag text={"Linux"} />
-        <SkillTag text={"Jira"} />
-        <SkillTag text={"Bitbucket"} />
-        <SkillTag text={"Doocker"} />
-        <SkillTag text={"JPA"} />
-        <SkillTag text={"Figma"} />
-      </div>
-      </div>
-      <span class="hidden md:block">
-   
-      </span>
-      </div>
-      {/* Main Skills */}
-      <div class="mx-[3vw] my-[2vh] grid grid-cols-2 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:w-[20vw] md:m-[2vw] md:flex md:flex-col md:my-[4vh] md:order-first md:mb-[2vw]">
-        <h2 class="col-span-2 m-[2vw] bg-gradient-to-l from-red-500 to-orange-300 bg-clip-text  font-bold text-transparent md:mx-[2vw] md:my-[0]">
-          Main Skills
-        </h2>
-        <MainSkillBox image={spring} text={"Spring"} />
-        <MainSkillBox image={java} text={"Java"} />
-        <MainSkillBox image={react} text={"React"} />
-        <MainSkillBox image={tailwind} text={"Tailwind"} />
-        <MainSkillBox image={flutter} text={"Flutter"} />
-        <MainSkillBox image={postgresql} text={"Postgre"} />
-      </div>
+              <SkillTag text={"Python"} />
+              <SkillTag text={"Django"} />
+              <SkillTag text={"Firebase"} />
+              <SkillTag text={"Linux"} />
+              <SkillTag text={"Jira"} />
+              <SkillTag text={"Bitbucket"} />
+              <SkillTag text={"Doocker"} />
+              <SkillTag text={"JPA"} />
+              <SkillTag text={"Figma"} />
+            </div>
+          </div>
+          <span class="hidden md:block"></span>
+        </div>
+        {/* Main Skills */}
+        <div class="mx-[3vw] my-[2vh] grid grid-cols-2 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:order-first md:mx-[2vw] md:my-[2vw] md:mb-[2vw] md:flex md:w-[20vw] md:flex-col">
+          <h2 class="col-span-2 m-[2vw] bg-gradient-to-l from-red-500 to-orange-300 bg-clip-text font-bold text-transparent md:mx-[2vw] md:my-[0]">
+            Main Skills
+          </h2>
+          <MainSkillBox image={spring} text={"Spring"} />
+          <MainSkillBox image={java} text={"Java"} />
+          <MainSkillBox image={react} text={"React"} />
+          <MainSkillBox image={tailwind} text={"Tailwind"} />
+          <MainSkillBox image={flutter} text={"Flutter"} />
+          <MainSkillBox image={postgresql} text={"Postgre"} />
+        </div>
       </div>
       <span class="md:hidden">
-      <SkillTagsWindow></SkillTagsWindow>
+        <SkillTagsWindow></SkillTagsWindow>
       </span>
     </div>
   );
 }
 
-function SkillTagsWindow(){
-  return(
+function SkillTagsWindow() {
+  return (
     <div>
-<div class="mx-[3vw] my-[2vh] grid grid-cols-3 md:grid-cols-6 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:mb-[2vw] md:my-[5vw] md:m-[4vw] ">
-        <h2 class="col-span-3 md:col-span-6 m-[2vw] font-bold text-orange-300 md:m-[1vw] md:mt-[0vw] md:mb-0">
+      <div class="mx-[3vw] my-[2vh] grid grid-cols-3 rounded-xl border border-orange-300 bg-[#1f1f1f] pb-[1vw] md:m-[4vw] md:my-[5vw] md:mb-[2vw] md:grid-cols-6">
+        <h2 class="col-span-3 m-[2vw] font-bold text-orange-300 md:col-span-6 md:m-[1vw] md:mb-0 md:mt-[0vw]">
           Schon verwendet
         </h2>
 
@@ -84,10 +83,10 @@ function SkillTagsWindow(){
         <SkillTag text={"Linux"} />
         <SkillTag text={"Jira"} />
         <SkillTag text={"Bitbucket"} />
-        <SkillTag text={"Doocker"} />
+        <SkillTag text={"Docker"} />
         <SkillTag text={"JPA"} />
         <SkillTag text={"Figma"} />
       </div>
     </div>
-  )
+  );
 }

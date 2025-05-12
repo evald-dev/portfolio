@@ -29,7 +29,7 @@ export default function HeaderSection() {
           <div class="my-4 flex flex-row space-x-4">
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1DEJ9boEeccXmFte-uqytmTpWKSVXOhOP/view?usp=sharing"
+              href="https://drive.google.com/file/d/10CYVy77dlEQdt3fxXdTPd5kd1pECJ4aB/view?usp=sharing"
             >
               <button class="hover: mt-[4vw] inline-flex w-auto min-w-[25vw] items-center rounded-[15px] border-[1px] border-white bg-[#FFA95E] px-[3vw] py-[1vw] text-[6vw] font-bold text-white opacity-95 duration-100 hover:scale-105 hover:opacity-100 md:mt-[1vw] md:min-w-[1vw] md:px-[1vw] md:py-[0vw] md:text-[2.5vw]">
                 <h2>Lebenslauf</h2>
